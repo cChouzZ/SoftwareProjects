@@ -1,0 +1,47 @@
+<html>
+<head>
+    
+</head>
+<body>
+    <form action = "process_get" method = "GET">
+        Name: <input type="text" name="name" required> <br/>
+
+        Email: <input type="email" name="email" required> <br/>
+
+        Password: <input type="password" name="password" required> <br/>
+
+        Confirm Password: <input type="password" name="confirm_password" required> <br/>
+
+        <input type = "submit" value = "Submit">
+
+    </form>
+
+    <script>
+        const nameInput = document.querySelector('[name="name"]');  
+        const passwordInput = document.querySelector('[name="password"]');
+        const confirm_passwordInput = document.querySelector('[name="confirm_password"]');
+
+        nameInput.addEventListener('blur',() => { 
+            const nameValue = nameInput.value;
+             if (!/^[a-zA-Z]*$/.test(nameValue)) { 
+                alert('Error: Make sure to only contain alphabetical characters!');
+            }
+        });
+
+        passwordInput.addEventListener('blur',() => { 
+            const passwordValue = passwordInput.value;
+             if (passwordValue.length < 6) { 
+                alert('Error: Make sure it is a minimum of six characters!');
+            }
+        });
+
+        confirm_passwordInput.addEventListener('blur',() => { 
+            const confirm_passwordValue = confirm_passwordInput.value;
+            const passwordValue = passwordInput.value;
+             if (confirm_passwordValue != passwordValue) { 
+                alert('Error: Make sure password and confirm password fields match!');
+            }
+        });
+    </script>
+</body>
+</html>
