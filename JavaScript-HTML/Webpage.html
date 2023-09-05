@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Webpage</title>
+  <style>
+    body { 
+		font-family: "Roboto", sans-serif;
+	}
+	h1 { 
+		text-align: center;
+	}
+	table,
+	form { 
+		width: 10px,
+		margin: 20 px auto;   
+		text-align: center;
+	}
+	table { 
+		margin: 10px 0;
+		border-collapse: collapse; 
+	} 
+	table td,
+	table th { 
+		border: solid 1px black;
+	} 
+	label,
+	input { 
+		margin: 10px 0;
+		font-size: 15px;
+	}
+	   
+  </style>
+  
+  <script src = "script.js"></script>
+	
+</head>
+<body>
+
+	<button onclick="handleClickAdd()">Add Row</button>
+	<button onclick="handleClickDelete()">Delete Row</button>
+	  
+	<table style = "width:100%" id = "charlie">
+		<thread>
+		 <tr>
+			<th>Select</th>
+			<th>Name</th>
+			<th>City</th>
+			<th>Email</th>
+		 </tr>
+		</thread>
+		<tbody></tbody>
+	</table>
+	
+	<form>
+		<input type="text" id="cityInput" placeholder="Enter a City">
+		<button type = "button" onclick="displayCity()">Show by City</button>
+	</form>
+	
+</body>
+</html>
+
+ 
