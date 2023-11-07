@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Context Menu List</string>
+    <string-array name="expenses_array">
+        <item>Expense: Food
+              Amount: 100
+              Date: 11/7/2023
+        </item>
+        <item>Expense: Transportation
+              Amount: 300
+              Date: 11/7/2023
+        </item>
+        <item>Expense: Entertainment
+              Amount: 200
+              Date: 11/7/2023
+        </item>
+        <item>Expense: School Supplies
+              Amount: 500
+              Date: 11/7/2023
+        </item>
+    </string-array>
+    <string-array name="menu">
+        <item>Edit</item>
+        <item>Delete</item>
+        <item>Cancel</item>
+    </string-array>
+</resources>
